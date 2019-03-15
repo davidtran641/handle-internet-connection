@@ -17,6 +17,8 @@
 		2F7FE328223B4ECC002F4B15 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FE327223B4ECC002F4B15 /* LaunchViewController.swift */; };
 		2F7FE32B223B51F4002F4B15 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FE32A223B51F4002F4B15 /* PostsTableViewController.swift */; };
 		2F7FE32E223B536B002F4B15 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FE32D223B536B002F4B15 /* OfflineViewController.swift */; };
+		2F7FE330223B592D002F4B15 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FE32F223B592D002F4B15 /* PostModel.swift */; };
+		2F7FE332223B5973002F4B15 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FE331223B5973002F4B15 /* PostInteractor.swift */; };
 		60C2B886F3F5BD614AD188DB /* Pods_HandleInternetConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A34A9976DCCBE7B63B9A0 /* Pods_HandleInternetConnection.framework */; };
 		A09DA3076DBE4E6B79724C1C /* Pods_HandleInternetConnectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F302DCAB2F167DDB8BD31860 /* Pods_HandleInternetConnectionTests.framework */; };
 		BCD47C1318A8EF0283F09756 /* Pods_HandleInternetConnectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437404222D7DC9A11F76B696 /* Pods_HandleInternetConnectionUITests.framework */; };
@@ -57,6 +59,8 @@
 		2F7FE327223B4ECC002F4B15 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		2F7FE32A223B51F4002F4B15 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		2F7FE32D223B536B002F4B15 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		2F7FE32F223B592D002F4B15 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		2F7FE331223B5973002F4B15 /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
 		42717F2DC357B8235A8B65C4 /* Pods-HandleInternetConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandleInternetConnection.release.xcconfig"; path = "Target Support Files/Pods-HandleInternetConnection/Pods-HandleInternetConnection.release.xcconfig"; sourceTree = "<group>"; };
 		437404222D7DC9A11F76B696 /* Pods_HandleInternetConnectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandleInternetConnectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295893DE10F208DE99F0EAC /* Pods-HandleInternetConnection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandleInternetConnection.debug.xcconfig"; path = "Target Support Files/Pods-HandleInternetConnection/Pods-HandleInternetConnection.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				2F7FE32A223B51F4002F4B15 /* PostsTableViewController.swift */,
+				2F7FE32F223B592D002F4B15 /* PostModel.swift */,
+				2F7FE331223B5973002F4B15 /* PostInteractor.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -469,8 +475,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F7FE32E223B536B002F4B15 /* OfflineViewController.swift in Sources */,
+				2F7FE332223B5973002F4B15 /* PostInteractor.swift in Sources */,
 				2F7FE326223B4EB5002F4B15 /* NetworkManager.swift in Sources */,
 				2F7FE31C223B4AEB002F4B15 /* AppDelegate.swift in Sources */,
+				2F7FE330223B592D002F4B15 /* PostModel.swift in Sources */,
 				2F7FE328223B4ECC002F4B15 /* LaunchViewController.swift in Sources */,
 				2F7FE32B223B51F4002F4B15 /* PostsTableViewController.swift in Sources */,
 			);
