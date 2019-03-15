@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import NotificationBannerSwift
 
 class PostsTableViewController: UITableViewController {
     
     private var posts = [PostModel]()
     private lazy var postInteractor = PostInteractor()
+    private lazy var networkBanner = NotificationBanner(title: "No internet connection", style: .info)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Latest Posts"
-        
+        fetchData()
+        handleNetworkStatus()
+    }
+    
+    private func fetchData() {
         postInteractor.fetchPosts { [weak self] (data, error) in
             guard let self = self, let data = data else {
                 return
@@ -25,7 +31,12 @@ class PostsTableViewController: UITableViewController {
             self.posts = data
             self.tableView.reloadData()
         }
-        
+    }
+    
+    private func handleNetworkStatus() {
+        NetworkManager.shared.reachability.whenUnreachable = { [weak self] _ in
+            self?.networkBanner.show()
+        }
     }
 }
 

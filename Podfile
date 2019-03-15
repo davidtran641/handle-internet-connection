@@ -6,6 +6,7 @@ target 'HandleInternetConnection' do
   # Pods for HandleInternetConnection
   pod 'ReachabilitySwift'
   pod 'Alamofire'
+  pod 'NotificationBannerSwift'
 
   target 'HandleInternetConnectionTests' do
     inherit! :search_paths
